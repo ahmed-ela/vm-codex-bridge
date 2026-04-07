@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+
+# Generated archives and local flattened copies
+vm-codex-bridge*.zip
+/vm_bridge_server.py
+/guest_session_agent.py
+
+# Host-local runtime artifacts
+/tmp/

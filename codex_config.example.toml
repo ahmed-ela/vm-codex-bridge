@@ -1,0 +1,9 @@
+# Copy this table into ~/.codex/config.toml or .codex/config.toml
+# Then replace the placeholder paths.
+
+[mcp_servers.vmBridge]
+command = "/Users/you/src/vm-codex-bridge/.venv/bin/python"
+args = ["/Users/you/src/vm-codex-bridge/host/vm_bridge_server.py"]
+cwd = "/Users/you/src/vm-codex-bridge"
+env = { VM_BRIDGE_CONFIG = "/Users/you/.vm-codex-bridge/profiles.json", VM_BRIDGE_LOG_LEVEL = "INFO" }
+env_vars = ["VM_SEQUOIA_LAB_VNC_PASSWORD", "VM_SONOMA_LAB_VNC_PASSWORD"]

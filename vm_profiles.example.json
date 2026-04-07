@@ -1,0 +1,85 @@
+{
+  "default_profile": "sequoia-lab",
+  "profiles": {
+    "sequoia-lab": {
+      "vm": {
+        "path": "/Users/you/VMs/sequoia-lab.vimi",
+        "app": "Vimy",
+        "open_args": []
+      },
+      "ssh": {
+        "host": "sequoia-lab.local",
+        "port": 22,
+        "user": "automation",
+        "key_path": "~/.ssh/id_ed25519",
+        "known_hosts_path": "~/.ssh/known_hosts",
+        "allow_unknown_hosts": false,
+        "connect_timeout_s": 10,
+        "banner_timeout_s": 10,
+        "auth_timeout_s": 15
+      },
+      "vnc": {
+        "host": "sequoia-lab.local",
+        "port": 5900,
+        "username": "",
+        "password_env": "VM_SEQUOIA_LAB_VNC_PASSWORD",
+        "connect_timeout_s": 10
+      },
+      "agent": {
+        "host": "127.0.0.1",
+        "port": 8765,
+        "connect_timeout_s": 10
+      },
+      "policy": {
+        "mode": "prepared_guest",
+        "allow_local_window_controls": false,
+        "require_agent_ready": true,
+        "require_vnc": false,
+        "startup_timeout_s": 180,
+        "recovery_timeout_s": 240,
+        "restart_on_unready": true,
+        "restart_grace_s": 12
+      }
+    },
+    "sonoma-lab": {
+      "vm": {
+        "path": "/Users/you/VMs/sonoma-lab.bundle",
+        "app": "Viable",
+        "open_args": []
+      },
+      "ssh": {
+        "host": "sonoma-lab.local",
+        "port": 22,
+        "user": "automation",
+        "key_path": "~/.ssh/id_ed25519",
+        "known_hosts_path": "~/.ssh/known_hosts",
+        "allow_unknown_hosts": false,
+        "connect_timeout_s": 10,
+        "banner_timeout_s": 10,
+        "auth_timeout_s": 15
+      },
+      "vnc": {
+        "host": "sonoma-lab.local",
+        "port": 5900,
+        "username": "",
+        "password_env": "VM_SONOMA_LAB_VNC_PASSWORD",
+        "connect_timeout_s": 10
+      },
+      "agent": {
+        "host": "127.0.0.1",
+        "port": 8765,
+        "connect_timeout_s": 10
+      },
+      "policy": {
+        "mode": "prepared_guest",
+        "allow_local_window_controls": false,
+        "require_agent_ready": true,
+        "require_vnc": false,
+        "startup_timeout_s": 180,
+        "recovery_timeout_s": 240,
+        "restart_on_unready": true,
+        "restart_grace_s": 12
+      }
+    }
+  }
+}
